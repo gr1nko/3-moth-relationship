@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../Christmas/static/style/style2.css">
+  <link href="../Christmas/static/script/script.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Жители сердечка <3</title>
+</head>
+
+<body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <h1>Жители сердечка</h1>
+  <div class="lol">
+    <div class="product-item">
+      <img src="../Christmas/static/img/zayka.jpg" alt="">
+      <div class="product-list">
+        <h3>Сизон Анастасия Александровна</h3>
+        <span class="price">Статус: сердечный вор</span>
+        <button class="button" onclick="show_popap('modal-1')">Описание и особенности</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-item1">
+      <img src="../Christmas/static/img/Archi.jpg" alt="">
+      <div class="product-list1">
+        <h3>Сизон Арчи Александрович</h3>
+        <span class="price1">Статус: сердечный вор</span>
+        <button class="button1" onclick="show_popap('modal-2')">Описание и особенности</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="modal-1">
+    <div class="flex-popap">
+      <div class="popap">
+        <span class="close_popap">Закрыть</span>
+        <h2>Описание и особенности</h2>
+        <p>Сизон Анастасия Александровна имеет довольно сложный и иногда выебонистый характер, в принципе, как и
+          Владислав Батькович. Также хочется отметить сногсшибательную внешность и прекрасную самооценку</p>
+        <p>Имеет хорошо прокаченный уровень готовки и умение подъебать с чем не сравниться ни один человек в мире, а
+          её мясо в курином соусе покорило данное сердечко <3</p>
+            <p>Сизон Анастасия Александровна является богиней в отношениях после которой не захочется никаких других
+              отношений даже с самим 박지민 .</p>
+            <h4>Обвиняется в краже сердца Гринько Владислава Юриевича от 28.09.2022</h4>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="overlay" id="modal-2">
+    <div class="flex-popap">
+      <div class="popap">
+        <span class="close_popap">Закрыть</span>
+        <h2>Описание и особенности</h2>
+        <p>Сизон Арчи Александрович на данный момент находиться в теле Йоркширского Терьера и представляет собой милого
+          мальчика.</p>
+        <p>Очень милый мальчик, но с характером свой мамы Сизон Анастасии Александровны. Из фактов: требует постоянную
+          любовь и заботу, если его мама уезжает даже на короткий срок может устроить бойкот и отказаться от пищи.</p>
+        <p>Также хочется добавить, что является соучастником с Сизон Анастасией Александровной.</p>
+        <h4>Обвиняется в краже сердца Гринько Владислава Юриевича от 28.09.2022</h4>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script language="JavaScript">
+    function show_popap(id_popap) {
+      var id = "#" + id_popap;
+      $(id).addClass('active');
+    }
+    $(".close_popap").click(function () {
+      $(".overlay").removeClass("active");
+    });
+  </script>
+
+
+<style type="text/css">  
+  #garland {position:absolute;top:0;left:0;background-image:url('https://i.servimg.com/u/f13/14/80/95/87/christ10.png');height:36px;width:100%;overflow:hidden;z-index:99}  
+  #nums_1 {padding:100px}  
+  .garland_1 {background-position: 0 0}  
+  .garland_2 {background-position: 0 -36px}  
+  .garland_3 {background-position: 0 -72px}  
+  .garland_4 {background-position: 0 -108px}  
+  </style>  <div id="garland" class="garland_4"><div id="nums_1">1</div></div>  
+  
+  <script type="text/javascript">  
+  function garland() {  
+  nums = document.getElementById('nums_1').innerHTML  
+  if(nums == 1) {document.getElementById('garland').className='garland_1';document.getElementById('nums_1').innerHTML='2'}  
+  if(nums == 2) {document.getElementById('garland').className='garland_2';document.getElementById('nums_1').innerHTML='3'}  
+  if(nums == 3) {document.getElementById('garland').className='garland_3';document.getElementById('nums_1').innerHTML='4'}  
+  if(nums == 4) {document.getElementById('garland').className='garland_4';document.getElementById('nums_1').innerHTML='1'}  
+  }  
+  
+  setInterval(function(){garland()}, 400)  
+  </script>
+
+
+
+</body>
+
+</html>
